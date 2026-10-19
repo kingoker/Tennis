@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amina Nurmukhan | Professional Tennis Sponsorship Portfolio</title>
+  <meta name="description" content="Sponsorship portfolio of Amina Nurmukhan, junior tennis player from Kazakhstan ranked No. 389 by the ITF: profile, results, season plan and budget.">
+  <meta name="theme-color" content="#06202D">
+
+  <!-- Open Graph — replace the title, URL and image once the site is live -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Amina Nurmukhan | Professional Tennis Sponsorship Portfolio">
+  <meta property="og:description" content="ITF No. 389, ATF Under-12 champion, Kazakhstan national team. Season plan, funding and partnership opportunities.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1696661115319-a9b6801e2571?w=1200&h=630&fit=crop&q=70">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    /* Decide the mode before first paint so the page never flashes the wrong layout. */
+    (function () {
+      var d = document.documentElement;
+      d.classList.remove('no-js');
+      d.classList.add('js');
+      /* the film plays on every screen; a large one gets the fixed 1440×900 frames,
+         a phone gets frames at reading size that the camera pans across */
+      var forced = /[?&]view=page/.test(location.search) ? 'page' : null;
+      var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!calm && forced !== 'page') {
+        d.classList.add('is-canvas', 'is-intro');
+        if (innerWidth >= 960 && innerHeight >= 560) d.classList.add('is-fixed');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <!-- Letterbox bars: they only say where you are in the film; nothing here is clickable -->
+  <header class="hud" id="hud">
+    <span class="hud-mark" data-bind-raw="player.initials">AN</span>
+    <p class="hud-now" aria-live="polite">
+      <span class="hud-chapter">Chapter <span id="hud-num">1</span> of <span id="hud-of">7</span></span>
+      <span class="hud-title" id="hud-title">Cover</span>
+    </p>
+    <p class="hud-doc">Sponsorship proposal, <span data-bind="settings.season">2027</span> season</p>
+    <div class="hud-progress" aria-hidden="true"><span id="hud-progress"></span></div>
+  </header>
+
+  <div class="reel canvas-only" aria-hidden="true">
+    <p class="tc"><span class="tc-dot"></span><span id="tc">00:00:00:00</span></p>
+    <ol class="reel-ticks" id="reel-ticks"><!-- rendered by script.js --></ol>
+  </div>
+
+  <!-- Film grade: grain, vignette and the soft dip between chapters -->
+  <div class="film" aria-hidden="true">
+    <div class="film-grain"></div>
+    <div class="film-dip" id="film-dip"></div>
+  </div>
+
+  <!-- Opening title, shown once before the camera descends onto the court -->
+  <div class="opening" aria-hidden="true">
+    <p class="opening-slug">Kazakhstan, October 2026</p>
+    <p class="opening-title">A season in the making</p>
+  </div>
+
+  <!-- ===================================================== THE COURT (one canvas) -->
+  <div class="stage" id="stage">
+    <main class="world" id="world">
+
+      <!-- Court drawn to scale: 1 m = 300 world px. Built by script.js -->
+      <svg class="court" id="court" aria-hidden="true" focusable="false"></svg>
+
+      <!-- ============================================ 01 COVER -->
+      <section class="board tone-film board--cover" id="cover" data-title="Cover"
+               data-x="1750" data-y="1500" data-r="0" aria-labelledby="cover-title">
+        <figure class="media media--cover" data-img="cover" data-sizes="100vw"></figure>
+        <div class="cover-shade" aria-hidden="true"></div>
+
+        <div class="board-inner cover-layout">
+          <p class="cover-overline reveal" style="--i:0">Sponsorship proposal, <span data-bind="settings.season">2027</span> season</p>
+
+          <h1 class="cover-name" id="cover-title">
+            <span class="line"><span class="line-in" data-bind="player.firstName">Amina</span></span>
+            <span class="line"><span class="line-in" data-bind="player.lastName">Nurmukhan</span></span>
+          </h1>
+
+          <span class="cover-rule" aria-hidden="true"></span>
+
+          <div class="cover-foot">
+            <div class="cover-rank reveal" style="--i:3">
+              <span class="label"><span data-bind="ranking.tour">ITF</span> ranking, <span data-bind="ranking.date">12 Oct 2026</span></span>
+              <span class="rank-figure"><span class="rank-no">No.</span><span class="rank-val" data-count="389" data-count-from="999">389</span></span>
+            </div>
+
+            <dl class="cover-facts reveal" style="--i:4">
+              <div><dt>Representing</dt><dd data-bind="player.country">Kazakhstan</dd></div>
+              <div><dt>Highlight</dt><dd data-bind="player.highlight">ATF Under-12 champion</dd></div>
+            </dl>
+
+            <div class="cover-pitch reveal" style="--i:5">
+              <p class="cover-tagline" data-bind="player.tagline">Built on discipline. Driven by ambition.</p>
+            </div>
+          </div>
+
+          <p class="scroll-cue canvas-only" aria-hidden="true"><span class="scroll-cue-line"></span>Scroll to roll the film</p>
+        </div>
+        <span class="board-no" aria-hidden="true">01/07</span>
+      </section>
+
+      <!-- ============================================ 02 PROFILE -->
+      <section class="board tone-data board--profile" id="profile" data-title="Player profile"
+               data-x="5530" data-y="3000" data-r="1" aria-labelledby="profile-title">
+        <div class="profile-layout">
+          <figure class="media media--profile" data-img="profile" data-sizes="(min-width: 960px) 40vw, 100vw">
+            <blockquote class="profile-quote">
+              <p data-bind="player.statement"></p>
+            </blockquote>
+          </figure>
+
+          <div class="board-inner profile-body">
+            <p class="chapter reveal" style="--i:0"><span class="chapter-no">Chapter 2</span><span class="chapter-name">Player profile</span></p>
+            <h2 class="h2 reveal reveal--focus" style="--i:1" id="profile-title">More than a ranking.</h2>
+            <p class="lead reveal" style="--i:2" data-bind="player.bio"></p>
+
+            <dl class="facts reveal" style="--i:3" id="profile-facts"><!-- rendered --></dl>
+
+            <p class="profile-motivation reveal" style="--i:4" data-bind="player.motivation"></p>
+          </div>
+        </div>
+        <span class="board-no" aria-hidden="true">02/07</span>
+      </section>
+
+      <!-- ============================================ 03 RANKINGS -->
+      <section class="board tone-data board--rankings" id="rankings" data-title="Rankings &amp; achievements"
+               data-x="3400" data-y="3000" data-r="-1" aria-labelledby="rankings-title">
+        <div class="board-inner rankings-layout">
+          <div class="rankings-main">
+            <p class="chapter reveal" style="--i:0"><span class="chapter-no">Chapter 3</span><span class="chapter-name">Rankings &amp; achievements</span></p>
+            <h2 class="visually-hidden" id="rankings-title">Rankings and achievements</h2>
+            <p class="big-rank reveal reveal--focus" style="--i:1">
+              <span class="big-rank-val" data-count="389" data-count-from="600">389</span>
+              <span class="big-rank-label">Current <span data-bind="ranking.tour"></span> ranking, <span data-bind="ranking.category"></span>, as of <span data-bind="ranking.date"></span></span>
+            </p>
+            <dl class="stat-grid" id="rank-stats"><!-- rendered --></dl>
+          </div>
+
+          <div class="rankings-side">
+            <div class="chart-card reveal" style="--i:2">
+              <h3 class="h-small">Ranking progression</h3>
+              <div class="chart" id="rank-chart"><!-- SVG rendered --></div>
+            </div>
+            <div class="achievements">
+              <h3 class="h-small reveal" style="--i:3">Achievements</h3>
+              <ul class="achievement-list" id="achievements"><!-- rendered --></ul>
+            </div>
+          </div>
+        </div>
+        <span class="board-no" aria-hidden="true">03/07</span>
+      </section>
+
+      <!-- ============================================ 04 RESULTS -->
+      <section class="board tone-data board--results" id="results" data-title="Tournament results"
+               data-x="7180" data-y="1500" data-r="1" aria-labelledby="results-title">
+        <div class="board-inner results-layout">
+          <header class="results-head">
+            <div>
+              <p class="chapter reveal" style="--i:0"><span class="chapter-no">Chapter 4</span><span class="chapter-name">Tournament results</span></p>
+              <h2 class="h2 reveal reveal--focus" style="--i:1" id="results-title">Proven on court.</h2>
+            </div>
+          </header>
+
+          <div class="results-summary reveal" style="--i:3" id="results-summary"><!-- rendered --></div>
+
+          <div class="table-wrap reveal" style="--i:4">
+            <table class="results-table">
+              <caption class="visually-hidden">Recent tournament results</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Date</th>
+                  <th scope="col">Tournament</th>
+                  <th scope="col">Country</th>
+                  <th scope="col">Surface</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Round</th>
+                  <th scope="col">Result</th>
+                </tr>
+              </thead>
+              <tbody id="results-body"><!-- rendered --></tbody>
+            </table>
+          </div>
+          <p class="fineprint" id="results-note"></p>
+        </div>
+        <span class="board-no" aria-hidden="true">04/07</span>
+      </section>
+
+      <!-- ============================================ 05 GOALS -->
+      <section class="board tone-film board--goals" id="goals" data-title="Goals &amp; development"
+               data-x="3400" data-y="1500" data-r="-1" aria-labelledby="goals-title">
+        <div class="goals-layout">
+          <div class="board-inner goals-body">
+            <p class="chapter reveal" style="--i:0"><span class="chapter-no">Chapter 5</span><span class="chapter-name">Goals &amp; development plan</span></p>
+            <h2 class="h2 reveal reveal--focus" style="--i:1" id="goals-title">The road from 389.</h2>
+
+            <ol class="timeline" id="timeline"><!-- rendered --></ol>
+
+            <div class="goals-foot reveal" style="--i:6">
+              <p class="goals-support">Sponsorship turns this plan into match play. It pays for tournament entries and travel, steady coaching, fitness and recovery, and the equipment a full season uses up.</p>
+              <p class="fineprint">Targets and dates are goals set by the player and team. They are not guaranteed results.</p>
+            </div>
+          </div>
+          <figure class="media media--goals" data-img="goals" data-sizes="(min-width: 960px) 25vw, 100vw"></figure>
+        </div>
+        <span class="board-no" aria-hidden="true">05/07</span>
+      </section>
+
+      <!-- ============================================ 06 FUNDING -->
+      <section class="board tone-data board--funding" id="funding" data-title="Schedule &amp; funding"
+               data-x="5530" data-y="1500" data-r="1" aria-labelledby="funding-title">
+        <div class="board-inner funding-layout">
+          <header class="funding-head">
+            <div>
+              <p class="chapter reveal" style="--i:0"><span class="chapter-no">Chapter 6</span><span class="chapter-name">Schedule &amp; funding</span></p>
+              <h2 class="h2 reveal reveal--focus" style="--i:1" id="funding-title">The season, costed.</h2>
+            </div>
+            <p class="estimate-tag reveal" style="--i:2" id="estimate-tag">All figures are estimates</p>
+          </header>
+
+          <div class="funding-grid">
+            <div class="table-wrap reveal" style="--i:3">
+              <table class="schedule-table">
+                <caption class="visually-hidden">Planned tournament schedule with estimated costs</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Event and place</th>
+                    <th scope="col">Date and surface</th>
+                    <th scope="col" class="num">Travel</th>
+                    <th scope="col" class="num">Stay</th>
+                    <th scope="col" class="num">Entry</th>
+                    <th scope="col" class="num">Other</th>
+                    <th scope="col" class="num">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="schedule-body"><!-- rendered --></tbody>
+                <tfoot id="schedule-foot"><!-- rendered --></tfoot>
+              </table>
+            </div>
+
+            <aside class="budget reveal" style="--i:4" aria-label="Budget summary">
+              <p class="budget-total">
+                <span class="label">Projected annual budget</span>
+                <span class="budget-total-val" id="budget-total"></span>
+              </p>
+              <dl class="budget-lines" id="budget-lines"><!-- rendered --></dl>
+              <div class="budget-bar" id="budget-bar" aria-hidden="true"></div>
+              <ul class="budget-legend" id="budget-legend"><!-- rendered --></ul>
+            </aside>
+          </div>
+
+          <p class="funding-statement reveal" style="--i:5">Your support helps transform a tournament plan into real competitive opportunities.</p>
+        </div>
+        <span class="board-no" aria-hidden="true">06/07</span>
+      </section>
+
+      <!-- ============================================ 07 CONTACT -->
+      <section class="board tone-film board--contact" id="contact" data-title="Partnership contact"
+               data-x="1750" data-y="3000" data-r="0" aria-labelledby="contact-title">
+        <div class="contact-layout">
+          <div class="board-inner contact-body">
+            <p class="chapter reveal" style="--i:0"><span class="chapter-no">Chapter 7</span><span class="chapter-name">Partnership contact</span></p>
+            <h2 class="h2 contact-title reveal reveal--focus" style="--i:1" id="contact-title">Let’s build the next chapter.</h2>
+            <p class="lead reveal" style="--i:2">Partner with an athlete committed to discipline, progress, and long-term performance. Together, we can create a meaningful partnership built around ambition, accountability, and opportunity.</p>
+
+            <dl class="contact-list reveal" style="--i:4" id="contact-list"><!-- rendered --></dl>
+
+            <footer class="site-foot reveal" style="--i:5">
+              <p id="copyright"></p>
+            </footer>
+          </div>
+
+          <figure class="media media--contact" data-img="contact" data-sizes="(min-width: 960px) 40vw, 100vw">
+            <div class="qr-card" id="qr-card"><!-- rendered --></div>
+          </figure>
+        </div>
+        <span class="board-no" aria-hidden="true">07/07</span>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Gives the page its scroll length in canvas mode; scrolling moves the camera. -->
+  <div class="scroll-track" id="scroll-track" aria-hidden="true"></div>
+
+  <noscript>
+    <style>.reveal,.line-in{opacity:1!important;transform:none!important}</style>
+  </noscript>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
